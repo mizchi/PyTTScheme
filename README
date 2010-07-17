@@ -1,6 +1,6 @@
 #Sample
 
-from ttsec import TScheme
+from pyttscheme import TScheme
 #make scheme
 twitter_updates = {"user":{"screen_name":"",
                            "user_id":""},
