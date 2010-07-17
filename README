@@ -1,0 +1,27 @@
+#Sample
+
+from ttsec import TScheme
+#make scheme
+twitter_updates = {"user":{"screen_name":"",
+                           "user_id":""},
+                  "text":"",
+                  "post_id":""
+          }
+# make wrapper by scheme
+tsc = TScheme(scheme=twitter_updates,header = "twitter_timeline")
+
+# shallow copy
+item = twitter_updates.copy()
+
+# make a record
+item = {"user":{"screen-name","mizchi"
+                "user-id":"1231454323"},
+        "text":"ほゲェ",
+        "post-id":"41314314155"
+        }
+#save
+tsc.put(item)
+
+#search
+tsc.get(where="text",number=0) #=> [ {"text":"ほゲェ"} ]
+
